@@ -1,69 +1,47 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Layout from "@/components/Layout/Layout";
+import styles from './page.module.css'
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.tsx</code> file.
-          </h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+ 
+    <Layout>
+    <div className={styles.home}>
+     
+     <div className={styles.conteudo}>
+      <p className={styles.intro}>
+        Apresento o meu <strong>Portal de Viagens</strong>, um espaço criado
+    para você descobrir destinos, conhecer lugares incríveis e encontrar
+    inspiração para sua próxima aventura.
+      </p>
+
+      <ul className={styles.lista}>
+        <li>🌴 Descubra destinos</li>
+        <li>🗺️ Explore novos lugares</li>
+        <li>📸 Encontre inspiração</li>
+        <li>✈️ Planeje sua próxima viagem</li>
+      </ul>
+
+      <p className={styles.final}>
+        <strong>
+           Seu próximo destino pode estar a apenas um clique de distância. 🌎✨
+        </strong>
+      </p>
+
+      <Link href="/destinos" className={styles.botao}>
+    Ver destinos
+      </Link>
+      </div>
+
+   <div className={styles.logo}>
+    <img src="/logo.jpeg" alt="Logo Portal de Viagens" />
     </div>
+
+    </div>
+
+    
+
+    </Layout>
+  
   );
 }
