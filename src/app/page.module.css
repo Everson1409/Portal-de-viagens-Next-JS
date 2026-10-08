@@ -35,7 +35,7 @@
 
 .lista li {
     font-weight: 500;
-    color: #475569;
+    color: #0F172A;
     line-height: 1.6;
 }
 
@@ -43,7 +43,7 @@
     font-size: 1.2rem;
     text-align: center;
     margin-top: 30px;
-    color: #0F4C5C;
+    color: #0F172A;
     transition: transform 0.3s ease;
 }
 

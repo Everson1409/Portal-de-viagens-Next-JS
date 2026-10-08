@@ -1,11 +1,11 @@
-import Layout from "@/components/Layout/Layout";
+
 import styles from './page.module.css'
 import Link from "next/link";
 
 export default function Home() {
   return (
  
-    <Layout>
+    
     <div className={styles.home}>
      
      <div className={styles.conteudo}>
@@ -41,7 +41,7 @@ export default function Home() {
 
     
 
-    </Layout>
+ 
   
   );
 }
